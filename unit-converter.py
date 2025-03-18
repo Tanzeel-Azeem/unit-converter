@@ -1,11 +1,11 @@
 import streamlit 
 
 streamlit.title(" Unit Converter App 😄🤩")
-streamlit.markdown("### An App where you can convert Lenght, Weight, Time and Temprature")
+streamlit.markdown("### An App where you can convert Lenght, Weight, Time and Temperature")
 streamlit.write (" Select a Category, Convert it and get the Result ")
 
 #                             ALL THE MAIN CATREGORIES ARE HERE                          
-category = streamlit.selectbox("Choose your Category", ["lenght", "Weight", "Time", "Temprature"])
+category = streamlit.selectbox("Choose your Category", ["lenght", "Weight", "Time", "Temperature"])
 
 
 def convert_func ( category, value, unit  ) :
@@ -75,7 +75,7 @@ elif ( category == "Weight"):
 elif (category == "Time"):
     unit = streamlit.selectbox ("⏳ Please Select one", ['hour to minutes', 'minutes to hour', 'minutes to second', 'second to minutes', 'hour to second', 'second to hour'])
 
-elif (category == "Temprature"):
+elif (category == "Temperature"):
     unit = streamlit.selectbox ("🌡 Please Select one", ['celcius to fahrenheit', 'fahrenheit  to celcius'])
 
 
