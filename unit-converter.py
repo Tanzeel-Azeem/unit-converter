@@ -57,7 +57,7 @@ def convert_func ( category, value, unit  ) :
             return value / 3600     
 
 #           TEMPRATURE
-    elif ( category == "Temprature"):
+    elif ( category == "Temperature"):
         if ( unit == "celcius to fahrenheit"):
             return (value * 9/5) + 32 
         elif (unit == "fahrenheit  to celcius"):
@@ -83,5 +83,5 @@ value = streamlit.number_input("Please Enter the value to Convert")
 
 if (streamlit.button("Convert")):
     result = convert_func (category, value, unit )
-    streamlit.success( f"The Result is {result: .2f}  🤩🎉✨" )
+    streamlit.success( f"The Result is {result}  🤩🎉✨" )
     streamlit.balloons()
