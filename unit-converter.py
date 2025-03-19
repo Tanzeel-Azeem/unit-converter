@@ -83,5 +83,5 @@ value = streamlit.number_input("Please Enter the value to Convert")
 
 if (streamlit.button("Convert")):
     result = convert_func (category, value, unit )
-    streamlit.success( f"The Result is {result}  🤩🎉✨" )
+    streamlit.success( f"The Result is {result: .2f}  🤩🎉✨" )
     streamlit.balloons()
